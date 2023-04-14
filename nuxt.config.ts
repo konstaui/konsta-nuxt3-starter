@@ -1,11 +1,13 @@
-import { defineNuxtConfig } from 'nuxt'
-
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  css: ['@/assets/main.scss'],
   build: {
     transpile: ['konsta'],
-    postcss: {
-      postcssOptions: require('./postcss.config.js'),
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
 })
