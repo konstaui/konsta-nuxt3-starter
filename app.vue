@@ -1,17 +1,17 @@
 <template>
   <!-- Wrap our app with App component -->
-  <k-app theme="ios">
+  <k-app>
     <NuxtPage />
   </k-app>
 </template>
 
 <script>
-  import { kApp } from 'konsta/vue';
-  import './assets/main.scss';
+import { kApp } from "konsta/vue";
+import "./assets/main.scss";
 
-  export default {
-    components: {
-      kApp,
-    },
-  };
+export default {
+  components: {
+    kApp,
+  },
+};
 </script>
